@@ -5,30 +5,27 @@ if (lang == 'ru') {
 } else if (lang == 'en') {
     days = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
 }
-
 console.log(days);
 
 let leng = 'ru';
 let deys;
-switch ('ru') {
+switch (leng) {
     case 'ru':
-        console.log(['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск']);
+        deys = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск'];
         break;
     default:
-        console.log(['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn']);
+        deys = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
         break;
 }
+console.log(deys);
 
 let lung = 'ru';
 let fun = {
-    ru: ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск'],
-    en: ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+    'ru': ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск'],
+    'en': ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
 };
 let duys = fun[lung];
 console.log(duys);
 
 let yourName = prompt('Кто ты?', 'Например: Артем');
 let id = yourName == 'Артем' ? console.log('Директор') : yourName == 'Александр' ? console.log('Преподаватель') : console.log('Ученик');
-
-
-
