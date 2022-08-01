@@ -1,10 +1,34 @@
-let num = 266219;
-let spliting = ("" + num).split("").map(Number);
-console.log(spliting);
-let multiply = spliting.reduce((a, b) => a * b);
-console.log(multiply);
+let lang = 'ru';
+let days;
+if (lang == 'ru') {
+    days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск'];
+} else if (lang == 'en') {
+    days = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+}
 
-let degree = multiply ** 3;
+console.log(days);
 
-let stringing = degree.toString();
-console.log(stringing.substring(0, 2));
+let leng = 'ru';
+let deys;
+switch ('ru') {
+    case 'ru':
+        console.log(['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск']);
+        break;
+    default:
+        console.log(['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn']);
+        break;
+}
+
+let lung = 'ru';
+let fun = {
+    ru: ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вск'],
+    en: ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+};
+let duys = fun[lung];
+console.log(duys);
+
+let yourName = prompt('Кто ты?', 'Например: Артем');
+let id = yourName == 'Артем' ? console.log('Директор') : yourName == 'Александр' ? console.log('Преподаватель') : console.log('Ученик');
+
+
+
